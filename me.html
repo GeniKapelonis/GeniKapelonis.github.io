@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Infor about the page-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet"
+  href = "about.css">
+  <link rel = "stylesheet"
+  href = "aboutMe.css">
+
+<style>
+
+.block {
+    display: block;
+    width: 10%;
+    border: solid;
+    background-color: whiteSmoke;
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+<script>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: arialBlack;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: whiteSmoke;
+    color: darkSlateGrey;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 23px;
+    width: 33%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: grey;}
+#Projects {background-color: grey;}
+#Contact {background-color: grey;}
+</script>
+</style>
+
+
+</head>
+<body>
+
+
+
+  <button class="tablink" onclick="openPage('Home', this, 'grey')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('Projects', this, 'grey')">Projects</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'grey')">Contact</button>
+
+
+  <div id="Home" class="tabcontent">
+
+
+        <body style="background-color:white">
+        <div>
+        <center><h1 style = "background-color:whiteSmoke;"> - Genia Kapelonis - </h1></center>
+        </div>
+
+
+        <div>
+        <!--  <center><em><p1> Santa Monica: https://santamonicaflyers.com/wp-content/themes/atec/images/home-section02.jpg </p1></em></center> -->
+        </div>
+<br>
+      <br>
+          <br>
+          <center><p3><strong>Get To Know:</p3></strong></center>
+          <br>
+
+          <center><p><p2><strong> I am currently a student at Santa Monica High School. I am someone who is who is very
+          <br>
+          interested in learning more about computer science and more specifically web developement. To learn a little bit more about me and
+          <br>
+          more about what I like to do in my free time, read the resume below.</strong></p2></p></center>
+
+
+
+<br>
+<br>
+<br>
+
+          <center><p3><strong>Genia Kapelonis's Resume:</p3></strong></center>
+<br>
+<br>
+<br>
+          <center><input type = "button" class = "block" onClick ="location.href= 'file:///C:/Users/Owner/Downloads/geniakapelonisresume.pdf';"value = ClickHere ></center>
+
+<br>
+<br>
+<br>
+<br>
+
+
+      <!--    <center><img src = "https://rmsothebys-cache.azureedge.net/b/3/c/5/b/3/b3c5b358453597ffb97c4088f93fe6feb82b0d5a.jpg"
+          width= "1400" height = "300"></center> -->
+
+          <center><img src = "https://i.pinimg.com/originals/5e/44/e8/5e44e815f369cd8ae0588e44f8169662.jpg"width= "300" height = "300" >
+          <img src = "https://i.pinimg.com/originals/90/51/19/905119ab97c2755974a782094c9d06d2.jpg"width= "300" height = "300">
+          <img src = "https://i.pinimg.com/736x/96/0b/f7/960bf7e628db88fa5e323425cc60435d--beach-lifeguard-santa-monica.jpg "width= "300" height = "300" ></center>
+
+
+  </div>
+
+  <div id="Projects" class="tabcontent">
+    <h1><p1>Projects:</p1></h1>
+    <p><h2><p1>There are no projects uploaded at the moment.</p1></h2></p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <center><h1><p1>Contact:</p1></h1></center>
+
+<br>
+
+    <center><input type = "button" class ="block" onClick ="location.href= 'https://www.facebook.com/geni.kapelonis?fref=pymk';"value = Facebook ></center>
+
+    <br>
+    <br>
+    <br>
+    <center><input type = "button" class ="block" onClick ="location.href= 'https://www.instagram.com/theking_ld/?hl=en';"value = Instagram ></center>
+<br>
+<br>
+<br>
+    <center><p3><strong>Or email me at:
+
+  <br>
+     gkap8765@gmail.com</p3></strong></center>
+
+    <br>
+
+  </div>
+
+  <script>
+  function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>
